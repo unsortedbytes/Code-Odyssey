@@ -23,4 +23,25 @@ int main(){
     printf("Buffer :%s\n", buffer);
     printf("After int write: %s\n", buffer);
     printf("Buffer corruption likely occured!\n\n");
-}
+
+
+    // Issue 2 : Unsigned/Signed mixing
+    printf("2. Signed/unsigned confusion:\n");
+    int signed_val = -1;
+    unsigned int unsigned_val = signed_val;
+    printf("Signed value : %d\n", signed_val);
+    printf("As unsigned: %u\n", unsigned_val);
+
+    if (unsigned_val > 1000){
+        printf("Unsigned value appers huge due to conversion!\n\n");
+    }
+
+
+    // Issue 3 : Array bounds not checked
+    printf("3. Array bounds violations:\n");
+    int arr[5] = {12, 42, 53, 12, 42};
+    printf("Valid access arr[4] = %d\n", arr[4]);
+    printf("Invalid access arr[10] = %d\n", arr[10]);// out of bounds
+    arr[10] = 999;// Writing out of bounds - undeifing behaviour
+    printf("Wrote  to arr[10] - memory corruption possible!\n\n");
+
