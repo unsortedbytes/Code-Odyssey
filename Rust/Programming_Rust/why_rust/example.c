@@ -45,3 +45,21 @@ int main(){
     arr[10] = 999;// Writing out of bounds - undeifing behaviour
     printf("Wrote  to arr[10] - memory corruption possible!\n\n");
 
+
+    // Issue 4 : Function pointer type confusion
+    printf("4. Function pointer  type confusion");
+    void(*func_ptr)() = (void(*)())modify_value;
+    printf("Function pointer  cast to worng signature - dangerous!\n\n");
+
+    
+    // Issue 5 : String/Int confussion
+    printf("5. Return type confusion: \n");
+    int result = get_string();
+    printf("String return  as int : %d\n", result);
+    printf("This is actually a memory address!\n\n");
+
+
+    // Issue 6 : Void pointer abuse
+    printf("6. Void pointer type erasure:\n");
+    int number = 123;
+}
