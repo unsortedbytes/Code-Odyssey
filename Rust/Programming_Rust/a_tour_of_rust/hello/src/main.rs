@@ -12,6 +12,13 @@ fn gcd(mut n:u64, mut m:u64) -> u64{
 
 }
 
+// Testing 
+#[test]
+fn test_gcd(){
+    assert_eq!(gcd(13, 25),2);
+    assert_eq!(gcd(2*3*5*11*17, 3*7*11*13*19), 3*11);
+}
+
 
 
 fn main() {
@@ -24,9 +31,11 @@ fn main() {
 
 
     let t:u64 = m;
-    {
-        println!("evaluating cos x");
-        t.cos()
-    }
-
+    let cosoft={
+        println!("evaluating cos x = {}", (t as f64).cos());
+        // (t as f64).cos();
+        (t as f64).cos()
+    };
+    
+    println!("The valueof cosoft is {}", cosoft);
 }
