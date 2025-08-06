@@ -1,0 +1,10 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+iron = "0.6.1"
+mime = "0.3.17"
+router = "0.6.0"
+urlencoded = "0.6.0"
