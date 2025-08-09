@@ -1,7 +1,7 @@
-# ONLY detect these 4 main project languages
-*.rs linguist-detectable=true
-*.c linguist-detectable=true 
-*.f90 linguist-detectable=true
+# ONLY detect these 4 main project languages - FORCE OVERRIDE
+*.rs linguist-detectable=true linguist-language=Rust
+*.c linguist-detectable=true linguist-language=C
+*.f90 linguist-detectable=true linguist-language=Fortran
 
 # Exclude ALL virtual environments and dependencies
 **/venv/** linguist-vendored
@@ -11,8 +11,8 @@ FastApi/*/venv/**/* linguist-vendored
 
 # Exclude ALL Python files by default, then include ONLY main.py files
 *.py linguist-vendored
-FastApi/Sanjeev/main.py linguist-vendored=false
-FastApi/Chai_aur_code/main.py linguist-vendored=false
+FastApi/Sanjeev/main.py linguist-vendored=false linguist-language=Python
+FastApi/Chai_aur_code/main.py linguist-vendored=false linguist-language=Python
 
 # FORCE exclude ALL unwanted language file types
 *.pyx linguist-vendored
@@ -35,9 +35,6 @@ makefile linguist-vendored
 *.make linguist-vendored
 *.cmake linguist-vendored
 CMakeLists.txt linguist-vendored
-
-# Nuclear option: completely disable Makefile language detection
-* -linguist-language=Makefile
 
 # Ensure ONLY main project directories are included
 Rust/* linguist-detectable=true
