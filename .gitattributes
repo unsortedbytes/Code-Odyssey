@@ -26,8 +26,8 @@ FastApi/Chai_aur_code/main.py linguist-vendored=false
 *.ps1 linguist-vendored
 *.psm1 linguist-vendored
 *.psd1 linguist-vendored
-# Fixed Makefile exclusion (only change made)
-**/[Mm]akefile* linguist-vendored
+# ONLY exclude root-level Makefile
+Makefile linguist-vendored
 *.mk linguist-vendored
 *.make linguist-vendored
 *.cmake linguist-vendored
@@ -37,5 +37,3 @@ CMakeLists.txt linguist-vendored
 Rust/* linguist-detectable=true
 Fortan/* linguist-detectable=true
 C/* linguist-detectable=true
-
-# Removed conflicting Makefile rules below
