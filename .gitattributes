@@ -36,6 +36,9 @@ makefile linguist-vendored
 *.cmake linguist-vendored
 CMakeLists.txt linguist-vendored
 
+# Nuclear option: completely disable Makefile language detection
+* -linguist-language=Makefile
+
 # Ensure ONLY main project directories are included
 Rust/* linguist-detectable=true
 Fortan/* linguist-detectable=true
