@@ -1,32 +1,31 @@
-# Remove Makefile from language statistics
-Makefile linguist-vendored
+# Mark all files as non-detectable by default
+* linguist-detectable=false
 
-# ONLY detect these main project languages
+# ONLY detect these languages
 *.rs linguist-detectable=true
-*.c linguist-detectable=true 
+*.c linguist-detectable=true
 *.f90 linguist-detectable=true
+Rust/** linguist-detectable=true
+Fortran/** linguist-detectable=true
+C/** linguist-detectable=true
 
-# Exclude virtual environments and dependencies
+# Exclude Git metadata files
+.gitattributes linguist-vendored
+.gitignore linguist-vendored
+.gitmodules linguist-vendored
+
+# Exclude virtual environments/dependencies
 **/venv/** linguist-vendored
 **/site-packages/** linguist-vendored
 **/node_modules/** linguist-vendored
-FastApi/*/venv/* linguist-vendored
+FastApi/**/venv/** linguist-vendored
 
-# Python file management - exclude by default, include specific main files
+# Exclude file types
+Makefile linguist-vendored
 *.py linguist-vendored
-FastApi/Sanjeev/main.py linguist-vendored=false
-FastApi/Chai_aur_code/main.py linguist-vendored=false
-
-# Exclude build and configuration files
 *.pyx linguist-vendored
 *.pxd linguist-vendored
 *.pxi linguist-vendored
-*.mk linguist-vendored
-*.make linguist-vendored
-*.cmake linguist-vendored
-CMakeLists.txt linguist-vendored
-
-# Exclude shell scripts and batch files
 *.sh linguist-vendored
 *.bash linguist-vendored
 *.zsh linguist-vendored
@@ -34,12 +33,9 @@ CMakeLists.txt linguist-vendored
 *.ps1 linguist-vendored
 *.psm1 linguist-vendored
 *.psd1 linguist-vendored
-
-# Exclude other unwanted languages
 *.m linguist-vendored
 *.mm linguist-vendored
-
-# Ensure main project directories are included
-Rust/* linguist-detectable=true
-Fortan/* linguist-detectable=true
-C/* linguist-detectable=true
+*.mk linguist-vendored
+*.make linguist-vendored
+*.cmake linguist-vendored
+CMakeLists.txt linguist-vendored
