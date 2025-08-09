@@ -1,3 +1,4 @@
+Makefile linguist-detectable=false
 
 # ONLY detect these 4 main project languages
 *.rs linguist-detectable=true
@@ -27,7 +28,6 @@ FastApi/Chai_aur_code/main.py linguist-vendored=false
 *.ps1 linguist-vendored
 *.psm1 linguist-vendored
 *.psd1 linguist-vendored
-# Makefile linguist-vendored
 *.mk linguist-vendored
 *.make linguist-vendored
 *.cmake linguist-vendored
@@ -37,6 +37,3 @@ CMakeLists.txt linguist-vendored
 Rust/* linguist-detectable=true
 Fortan/* linguist-detectable=true
 C/* linguist-detectable=true
-Makefile linguist-detectable=false
-# Makefile linguist-documentation=true
-# Makefile linguist-vendored=true
