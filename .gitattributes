@@ -6,7 +6,8 @@
 # Exclude ALL virtual environments and dependencies
 **/venv/** linguist-vendored
 **/site-packages/** linguist-vendored
-FastApi/*/venv/* linguist-vendored
+FastApi/*/venv/** linguist-vendored
+FastApi/*/venv/**/* linguist-vendored
 
 # Exclude ALL Python files by default, then include ONLY main.py files
 *.py linguist-vendored
@@ -29,6 +30,7 @@ FastApi/Chai_aur_code/main.py linguist-vendored=false
 # FORCE exclude ALL Makefile types to remove from GitHub language stats
 Makefile linguist-vendored
 makefile linguist-vendored
+*makefile* linguist-vendored
 *.mk linguist-vendored
 *.make linguist-vendored
 *.cmake linguist-vendored
