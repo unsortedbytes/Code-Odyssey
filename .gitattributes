@@ -27,7 +27,7 @@ FastApi/Chai_aur_code/main.py linguist-vendored=false
 *.ps1 linguist-vendored
 *.psm1 linguist-vendored
 *.psd1 linguist-vendored
-Makefile linguist-vendored
+# Makefile linguist-vendored
 *.mk linguist-vendored
 *.make linguist-vendored
 *.cmake linguist-vendored
