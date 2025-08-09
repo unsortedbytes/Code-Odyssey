@@ -38,5 +38,5 @@ Rust/* linguist-detectable=true
 Fortan/* linguist-detectable=true
 C/* linguist-detectable=true
 Makefile linguist-detectable=false
-Makefile linguist-documentation=true
-Makefile linguist-vendored=true
+# Makefile linguist-documentation=true
+# Makefile linguist-vendored=true
