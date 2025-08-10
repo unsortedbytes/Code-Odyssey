@@ -1,0 +1,26 @@
+// Rustup 
+1. rustup 
+-> rustup update -> update rust 
+
+// Cargo
+2.cargo     
+cargo run 
+cargo new 
+cargo build
+cargo debug
+cargo test
+
+
+// File 
+-> tell me about the file aritecure 
+file main
+
+// rustc -> Rust compiler
+rustc main.go
+
+// rustfmt and cargo fmt 
+
+// cargo run --quit -> hide the rest of comand
+
+
+
