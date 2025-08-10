@@ -1,42 +1,14 @@
-# ONLY detect these 4 main project languages - FORCE OVERRIDE
-*.rs linguist-detectable=true linguist-language=Rust
-*.c linguist-detectable=true linguist-language=C
-*.f90 linguist-detectable=true linguist-language=Fortran
+# Force only these 4 languages to be detected
+*.rs linguist-detectable=true
+*.c linguist-detectable=true 
+*.f90 linguist-detectable=true
+FastApi/Sanjeev/main.py linguist-detectable=true
+FastApi/Chai_aur_code/main.py linguist-detectable=true
 
-# Exclude ALL virtual environments and dependencies
-**/venv/** linguist-vendored
-**/site-packages/** linguist-vendored
-FastApi/*/venv/** linguist-vendored
-FastApi/*/venv/**/* linguist-vendored
-
-# Exclude ALL Python files by default, then include ONLY main.py files
-*.py linguist-vendored
-FastApi/Sanjeev/main.py linguist-vendored=false linguist-language=Python
-FastApi/Chai_aur_code/main.py linguist-vendored=false linguist-language=Python
-
-# FORCE exclude ALL unwanted language file types
-*.pyx linguist-vendored
-*.pxd linguist-vendored
-*.pxi linguist-vendored
-*.m linguist-vendored
-*.mm linguist-vendored
-*.sh linguist-vendored
-*.bash linguist-vendored
-*.zsh linguist-vendored
-*.fish linguist-vendored
-*.ps1 linguist-vendored
-*.psm1 linguist-vendored
-*.psd1 linguist-vendored
-# FORCE exclude ALL Makefile types to remove from GitHub language stats
+# Exclude everything else including all Makefile variants
+* linguist-vendored
 Makefile linguist-vendored
 makefile linguist-vendored
 *makefile* linguist-vendored
 *.mk linguist-vendored
 *.make linguist-vendored
-*.cmake linguist-vendored
-CMakeLists.txt linguist-vendored
-
-# Ensure ONLY main project directories are included
-Rust/* linguist-detectable=true
-Fortan/* linguist-detectable=true
-C/* linguist-detectable=true
