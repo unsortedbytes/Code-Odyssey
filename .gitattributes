@@ -31,3 +31,12 @@ CMakeLists.txt linguist-vendored
 **/.env/** linguist-vendored
 **/site-packages/** linguist-vendored
 **/__pycache__/** linguist-vendored
+
+# Exclude directories from language detection
+*/ linguist-vendored
+C/* linguist-detectable=true
+FastApi/* linguist-detectable=true
+Fortan/* linguist-detectable=true
+Golang/* linguist-detectable=true
+Python/* linguist-detectable=true
+Rust/* linguist-detectable=true
