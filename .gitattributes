@@ -1,14 +1,19 @@
-# Force only these 4 languages to be detected
+# Enable detection for main project languages
 *.rs linguist-detectable=true
 *.c linguist-detectable=true 
 *.f90 linguist-detectable=true
-FastApi/Sanjeev/main.py linguist-detectable=true
-FastApi/Chai_aur_code/main.py linguist-detectable=true
 
-# Exclude everything else including all Makefile variants
-* linguist-vendored
+# Enable only specific Python files
+*.py linguist-vendored
+FastApi/Sanjeev/main.py linguist-vendored=false
+FastApi/Chai_aur_code/main.py linguist-vendored=false
+
+# Exclude all makefile-related files and patterns
 Makefile linguist-vendored
 makefile linguist-vendored
-*makefile* linguist-vendored
+**/makefile.py linguist-vendored
+**/*makefile* linguist-vendored
 *.mk linguist-vendored
 *.make linguist-vendored
+*.cmake linguist-vendored
+CMakeLists.txt linguist-vendored
