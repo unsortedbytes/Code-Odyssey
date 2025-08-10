@@ -1,17 +1,10 @@
-# Fresh start - exclude all Makefiles and similar files
-Makefile linguist-vendored
-makefile linguist-vendored
-**/makefile.py linguist-vendored
-**/*makefile* linguist-vendored
-*.mk linguist-vendored
-*.make linguist-vendored
+# Exclude everything by default
+* linguist-vendored
 
-# Only detect these specific file types
-*.rs linguist-detectable=true
-*.c linguist-detectable=true
-*.f90 linguist-detectable=true
-
-# Python - only specific files
-*.py linguist-vendored
-FastApi/Sanjeev/main.py linguist-vendored=false
-FastApi/Chai_aur_code/main.py linguist-vendored=false
+# Include ONLY these specific file extensions
+*.rs linguist-vendored=false
+*.go linguist-vendored=false
+*.c linguist-vendored=false
+*.html linguist-vendored=false
+*.cpp linguist-vendored=false
+*.c++ linguist-vendored=false
