@@ -2,7 +2,7 @@ fn main() {
     //println!("Hello, world!");
     let apples = 50;
     let oranges = 14 +8;
-    let fruits = apples + oranges;
+    let _fruits = apples + oranges;
 
     println!("My Garden ");
     println!("My house");
