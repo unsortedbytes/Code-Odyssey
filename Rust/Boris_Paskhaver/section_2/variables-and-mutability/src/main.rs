@@ -11,4 +11,8 @@ fn main() {
     //println!("This year, my garden have {apples  - 10} apples");
     // Case study 
     println!("This year, my garden have {} apples and {} oranges", apples, oranges);
+
+    println!("This year, my garden have {1} apples and {0} oranges total {1} fruits", apples, oranges);
+    // This help to unrepeate the arugments 
+
 }
