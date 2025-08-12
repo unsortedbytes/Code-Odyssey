@@ -1,5 +1,7 @@
+#![type(unused_variables)] // -> ! means the whole file
 type Meters = i32;
 
+#[type(unused_variables)]
 fn main() {
     //println!("Hello, world!");
     let apples = 50;
