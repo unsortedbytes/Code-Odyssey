@@ -24,4 +24,15 @@ fn main() {
 
     //gym_reps = 15;
     gym_reps_mut = 23;
+    println!("############################################################################");
+    println!("############################################################################");
+    println!("Variable shawdoing");
+    let grams_of_protein ="100.345";//->&str
+    
+    //
+    let grams_of_protein = 100.345;//-> f64
+    //
+    let mut grams_of_protein = 100;
+
+    grams_of_protein = 98;
 }
