@@ -1,3 +1,5 @@
+type Meters = i32;
+
 fn main() {
     //println!("Hello, world!");
     let apples = 50;
@@ -45,11 +47,50 @@ fn main() {
     
     {
         let cookie_price = 1.99;
-        let coffee_price = 43;
+        let coffee_price = 43;// not a variable shawdoing 
         println!("The Coffee_price is {coffee_price}");
         println!("The cookie price is {cookie_price}");
 
     }
     println!("The coffee price is {coffee_price}");
 
+
+    println!("##################################################################################");
+    println!("#************* Constansts *******************************************************#");
+    println!("########;###########################################################################");
+
+    //println!("The value of new_cat is {TEST}");
+
+    const NEW_CAT:i32 = 43;
+    {
+        const TEST :f32 = 24.22;
+    }
+    println!("The value of Test is {TEST}");
+    println!("The value of new_cat is {NEW_CAT}");
+    
+
+
+
+    println!("#####################################################################################");
+    println!("# *             Types Alies              * #");
+    println!("###################################################################################");
+
+    
+    let mile_race_length: Meters = 1600;
+    let two_mile_race_length: Meters = 3210;
+    println!("A  one  mile race is {mile_race_length} meters long and a two mile is {two_mile_race_length}");
+
+
+
+
+    println!("###############################################################################");
+    println!("# *               Compiler Directives                    * #");
+    println!("###############################################################################");
+
+    #[allow(unused_variables)]
+    let mike = 1600;
+    #[allow(unused_variables)]
+    let tow = 3200;
 }
+
+const TEST:f64 = 923.43;
