@@ -35,4 +35,21 @@ fn main() {
     let mut grams_of_protein = 100;
 
     grams_of_protein = 98;
+
+
+    println!("#################################################################################");
+    println!("#***************** Scopes *******************************************************");
+    println!("##################################################################################");
+
+    let coffee_price = 5.99;
+    
+    {
+        let cookie_price = 1.99;
+        let coffee_price = 43;
+        println!("The Coffee_price is {coffee_price}");
+        println!("The cookie price is {cookie_price}");
+
+    }
+    println!("The coffee price is {coffee_price}");
+
 }
