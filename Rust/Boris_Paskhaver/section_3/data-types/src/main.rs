@@ -155,4 +155,15 @@ fn main() {
     let user_is_admin = true;
     let user_can_see_premium_experience = user_is_admin || user_has_paid_for_subscription;
     println!("Cann this user see my site {}", user_can_see_premium_experience);
+
+
+    println!("\n\n\n\n\n");
+    let first_initial = 'B';//-> char
+    let example = "B";// -> stirng literals
+    let emoji:char = '😄';
+    println!("{emoji}");
+    println!("{} {}", emoji, emoji.is_alphabetic());
+    println!("{} {}", first_initial, first_initial.is_alphabetic());
+    println!("{} {}", first_initial, first_initial.is_uppercase());
+    println!("{} {}", first_initial, first_initial.is_lowercase());
 }
