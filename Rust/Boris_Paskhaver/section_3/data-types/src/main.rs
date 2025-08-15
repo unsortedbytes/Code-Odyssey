@@ -166,4 +166,25 @@ fn main() {
     println!("{} {}", first_initial, first_initial.is_alphabetic());
     println!("{} {}", first_initial, first_initial.is_uppercase());
     println!("{} {}", first_initial, first_initial.is_lowercase());
+
+
+    println!("\n\n\n\n\n");
+
+    let numbers:[i32;6] = [4, 5, 3, 1, 53, 2];
+
+    let apples = ["Aditya", "kumar", "21MF10004"];
+    println!("Length: {}", apples.len());
+
+    let currency_rates:[i32;3] ;
+
+    let seasons:[&str; 4] = ["Spring", "Summer", "Fall", "Winter"];
+
+    let second = seasons[1];
+    let first = seasons[0];
+    let third = seasons[2];
+    let fouth = seasons[3];
+    // let fith = seasons[4];
+    println!("The first season is {first} and the second season is {second}");
+
+
 }
