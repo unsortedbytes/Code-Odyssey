@@ -177,7 +177,7 @@ fn main() {
 
     let currency_rates:[i32;3] ;
 
-    let seasons:[&str; 4] = ["Spring", "Summer", "Fall", "Winter"];
+    let mut seasons:[&str; 4] = ["Spring", "Summer", "Fall", "Winter"];
 
     let second = seasons[1];
     let first = seasons[0];
@@ -186,5 +186,15 @@ fn main() {
     // let fith = seasons[4];
     println!("The first season is {first} and the second season is {second}");
 
+    seasons[2]="Autumn";
 
+    println!("\n\n\n\n\n");
+    println!("{:?}", seasons);
+    // Debug trait 
+    
+
+    // !dbg 
+    dbg!(2+2);
+
+    dbg!(seasons);
 }
