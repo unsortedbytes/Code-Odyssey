@@ -197,4 +197,40 @@ fn main() {
     dbg!(2+2);
 
     dbg!(seasons);
+
+
+    let employee = ("Aditya", 43, "Kumar");
+    let name = employee.0;
+    let number = employee.1;
+    let surname = employee.2;
+
+    println!("The name is {} surname {} and the number is {}", name, surname, number);
+
+    println!("{employee:#?}");
+
+    dbg!(employee);
+
+
+    // Ranges and Ranges idteration
+    let month_days: std::ops::Range<i8> = 1..1000;
+    let month_days = 1..=31;
+    println!("{month_days:#?}");
+
+    for number in month_days {
+        println!("The day today is {number}");
+    }
+
+    for letters in 'b'..'z'{
+        println!("The letters is {letters}");
+    }
+
+    let colors = ["red", "green", "blue"];
+    for color in colors{
+        println!("The colors will be {color}");
+    }
+
+
+    println!("\n\n\n\n");
+    println!("Genric \n\n\n\n");
+        
 }
